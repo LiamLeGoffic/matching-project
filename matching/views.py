@@ -35,6 +35,7 @@ def RM_home(request, id):
         'users_by_role': users_by_role,
         'consultants': consultants,
     }
+    
     return render(request, 'matching/RM_home.html', content)
 
 
