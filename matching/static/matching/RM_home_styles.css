@@ -44,3 +44,8 @@ body {
     min-height: 40px;
     align-items: center;
 }
+
+.list-group-item {
+    border: none !important;
+    border-bottom: 1px solid rgba(0,0,0,0.125) !important
+}

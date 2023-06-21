@@ -185,41 +185,43 @@
         <div class="col-8">
 
             <div class="card card-scrollable card-style">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item flex-arrangement">
-                        <h3 class="card-title" style="flex: 1;">Gestion des utilisateurs</h3>
-                        <button type="button flex-right" class="btn btn-primary">
-                            <i class="fa-solid fa-plus fa-2xl mr-2"></i>
-                            Ajouter
-                        </button>
-                    </li>
-                    <li class="list-group-item">
-                        <div class="row flex-arrangement">
-                            <div class="col-3 flex-center">
-                                
-                                <span class="block-users-sorting-random block-users-sorting-by-name" style="display: block">
-                                    <span class="users-sorting-random">RÔLE</span>
-                                    <i class="fa-solid fa-sort ml-2 users-sorting-by-role pointer-hover"></i>
-                                </span>
-                                <span class="block-users-sorting-by-role" style="display: none">
-                                    <span class="users-sorting-random">RÔLE</span>
-                                    <i class="fa-solid fa-sort-down ml-2 users-sorting-random pointer-hover"></i>
-                                </span>
+                <ul class="list-group list-group-flush" style="position: relative; overflow: auto;">
+                    <div  style="position: sticky; z-index: 100; top: 0">
+                        <li class="list-group-item flex-arrangement">
+                            <h3 class="card-title" style="flex: 1;">Gestion des utilisateurs</h3>
+                            <button type="button flex-right" class="btn btn-primary">
+                                <i class="fa-solid fa-plus fa-2xl mr-2"></i>
+                                Ajouter
+                            </button>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row flex-arrangement">
+                                <div class="col-3 flex-center">
+                                    
+                                    <span class="block-users-sorting-random block-users-sorting-by-name" style="display: block">
+                                        <span class="users-sorting-random">RÔLE</span>
+                                        <i class="fa-solid fa-sort ml-2 users-sorting-by-role pointer-hover"></i>
+                                    </span>
+                                    <span class="block-users-sorting-by-role" style="display: none">
+                                        <span class="users-sorting-random">RÔLE</span>
+                                        <i class="fa-solid fa-sort-down ml-2 users-sorting-random pointer-hover"></i>
+                                    </span>
+                                </div>
+                                <div class="col-3 flex-center">
+                                    NOM
+                                    <span class="block-users-sorting-random block-users-sorting-by-role" style="display: block">
+                                        <i class="fa-solid fa-sort ml-2 users-sorting-by-name pointer-hover"></i>
+                                    </span>
+                                    <span class="block-users-sorting-by-name" style="display: none">
+                                        <i class="fa-solid fa-sort-down ml-2 users-sorting-random pointer-hover"></i>
+                                    </span>
+                                </div>
+                                <div class="col-3 flex-center">MAIL</div>
+                                <div class="col-2 flex-center">NUMERO</div>
+                                <div class="col-1"></div>
                             </div>
-                            <div class="col-3 flex-center">
-                                NOM
-                                <span class="block-users-sorting-random block-users-sorting-by-role" style="display: block">
-                                    <i class="fa-solid fa-sort ml-2 users-sorting-by-name pointer-hover"></i>
-                                </span>
-                                <span class="block-users-sorting-by-name" style="display: none">
-                                    <i class="fa-solid fa-sort-down ml-2 users-sorting-random pointer-hover"></i>
-                                </span>
-                            </div>
-                            <div class="col-3 flex-center">MAIL</div>
-                            <div class="col-2 flex-center">NUMERO</div>
-                            <div class="col-1"></div>
-                        </div>
-                    </li>
+                        </li>
+                    </div>
                     <span class="block-users-sorting-random"style="display: block;">
                         {% for user in users_random %}
                         <li class="list-group-item">
