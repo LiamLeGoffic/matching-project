@@ -88,29 +88,71 @@
             <div class="card card-style">
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item flex-arrangement">
-                        <h3 class="card-title" style="flex: 1;">Gestion des compétences</h3>
-                        <a type="button" class="btn flex-right" style="background-color: green; color: white;" href="{% url 'gestion-skills' %}">
-                            Voir
-                        </a>
+                        <h3 class="card-title" style="flex: 1;">Compétences</h3>
+                        <form class="input-group w-auto my-auto d-none d-sm-flex flex-right">
+                            <input style="max-width: 75%;" autocomplete="off" type="search" class="form-control rounded" placeholder="Ex : Python" name="saisie"  />
+                            <span class="input-group-text border-0 d-none d-lg-flex"><i class="fas fa-search"></i></span>
+                        </form>
                     </li>
                     <li class="list-group-item">
-                        <i class="fa-solid fa-bell fa-2xl mr-2" style="color: green;"></i>
-                        4 ajouts de compétence en attente
-                    </li>
-                </ul>
-            </div>
-
-            <div class="card mt-3 card-style">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item flex-arrangement">
-                        <h3 class="card-title" style="flex: 1;">Gestion des missions</h3>
-                        <a type="button" class="btn flex-right" style="background-color: orange; color: white;" href="{% url 'gestion-missions' %}">
-                            Voir
-                        </a>
+                        <div class="row" style="display: flex; align-items: center;">
+                            <div class="col-4">
+                                Python
+                            </div>
+                            <div class="col-4">
+                                12 consultants
+                            </div>
+                            <div class="col-4" style="display: flex; justify-content: flex-end; align-items: center;">
+                                <button type="button" class="btn btn-danger" style="display: flex; justify-content: center;">
+                                    <i class="fa-solid fa-xmark fa-xl"></i>
+                                </button>
+                            </div>
+                        </div>
                     </li>
                     <li class="list-group-item">
-                        <i class="fa-solid fa-bell fa-2xl mr-2" style="color: orange;"></i>
-                        44 missions sans consultant
+                        <div class="row" style="display: flex; align-items: center;">
+                            <div class="col-4">
+                                Angular
+                            </div>
+                            <div class="col-4">
+                                6 consultants
+                            </div>
+                            <div class="col-4" style="display: flex; justify-content: flex-end; align-items: center;">
+                                <button type="button" class="btn btn-danger" style="display: flex; justify-content: center;">
+                                    <i class="fa-solid fa-xmark fa-xl"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row" style="display: flex; align-items: center;">
+                            <div class="col-4">
+                                Spring
+                            </div>
+                            <div class="col-4">
+                                21 consultants
+                            </div>
+                            <div class="col-4" style="display: flex; justify-content: flex-end; align-items: center;">
+                                <button type="button" class="btn btn-danger" style="display: flex; justify-content: center;">
+                                    <i class="fa-solid fa-xmark fa-xl"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row" style="display: flex; align-items: center;">
+                            <div class="col-4">
+                                Docker
+                            </div>
+                            <div class="col-4">
+                                4 consultants
+                            </div>
+                            <div class="col-4" style="display: flex; justify-content: flex-end; align-items: center;">
+                                <button type="button" class="btn btn-danger" style="display: flex; justify-content: center;">
+                                    <i class="fa-solid fa-xmark fa-xl"></i>
+                                </button>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
