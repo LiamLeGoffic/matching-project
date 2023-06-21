@@ -5,6 +5,7 @@ from django.db import models
 
 class Skill(models.Model):
     description = models.CharField(max_length=100)
+    date_creation = models.DateField(auto_now_add=True)
     #urlLogo ??
 
     def __str__(self):
