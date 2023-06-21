@@ -1,0 +1,29 @@
+body {
+    background: #44c4e7;
+    font-weight: bolder;
+}
+
+.card {
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+}
+
+.btn {
+    border-radius: 10px;
+}
+
+.btn-remove {
+    border-radius: 10px;
+    background-color: rgb(255, 54, 54);
+    color: white;
+    padding: 15px;
+    border: none;
+}
+
+.btn-remove:focus {
+    outline: none;
+    background-color: rgb(253, 78, 78);
+}
+

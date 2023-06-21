@@ -1,0 +1,46 @@
+body {
+    background: #44c4e7;
+    font-weight: bolder;
+}
+
+.btn {
+    border-radius: 10px;
+}
+
+.card-scrollable {
+    max-height: 400px;
+    overflow: auto;
+}
+
+.pointer-hover:hover {
+    cursor: pointer;
+}
+
+.card-style {
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+}
+
+.flex-arrangement {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-line {
+    min-height: 40px;
+    align-items: center;
+}

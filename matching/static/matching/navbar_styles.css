@@ -1,0 +1,29 @@
+.navbar {
+    background-color: #b3b3b3;
+    height: 130px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.navbar-left,
+.navbar-right {
+    flex: 1;
+}
+
+.navbar-center {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.button-navbar {
+    border-radius: 10px;
+    background-color: white;
+}

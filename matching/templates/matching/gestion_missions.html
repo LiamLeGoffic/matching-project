@@ -1,0 +1,220 @@
+{% extends 'matching/navbar.html' %}
+
+{% block extra_css_2 %}
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'matching/gestion_missions_styles.css' %}" />
+
+{% endblock %}
+
+
+{% block content_2 %}
+
+<div class="container-fluid">
+    <div class="row mt-3">
+
+        <div class="col-8">
+            <div class="card">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item" style="display: flex; justify-content: space-between; align-items: center;">
+                        <h3 class="card-title" style="flex: 1;">Missions</h3>
+                        <form class="input-group w-auto my-auto d-none d-sm-flex" style="width: 300px!important">
+                            <input autocomplete="off" type="search" class="form-control rounded" placeholder="Rechercher par compétence" name="saisie"  />
+                            <span class="input-group-text border-0 d-none d-lg-flex"><i class="fas fa-search"></i></span>
+                        </form>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row" style="display: flex; justify-content: space-between; align-items: center;">
+                            <div class="col-2" style="display: flex; justify-content: center">CLIENT<i class="fa-solid fa-sort ml-2"></i></div>
+                            <div class="col-3" style="display: flex; justify-content: center">DESCRIPTION<i class="fa-solid fa-sort ml-2"></i></div>
+                            <div class="col-3" style="display: flex; justify-content: center">DATE D'AJOUT<i class="fa-solid fa-sort ml-2"></i></div>
+                            <div class="col-3" style="display: flex; justify-content: center">AUTEUR<i class="fa-solid fa-sort-down ml-2"></i></div>
+                            <div class="col-1"></div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="card" style="padding-bottom: 10px">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="row" style="display: flex; align-items: center;">
+                                        <div class="col-2" style="display: flex; justify-content: center">
+                                            <h5>Décathlon</h5>
+                                        </div>
+                                        <div class="col-3" style="display: flex; justify-content: center">
+                                            <h5>Développeur Python</h5>
+                                        </div>
+                                        <div class="col-3" style="display: flex; justify-content: center">
+                                            <h5>06/06/2023</h5>
+                                        </div>
+                                        <div class="col-3" style="display: flex; justify-content: center">
+                                            <h5>Liam Le Goffic</h5>
+                                        </div>
+                                        <div class="col-1" style="display: flex; justify-content: flex-end; align-items: center;">
+                                            <button type="button" class="btn btn-danger" style="display: flex; justify-content: center;">
+                                                <i class="fa-solid fa-xmark fa-xl"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row mb-2" style="display: flex; align-items: center;">
+                                        <div class="col-3" style="display: flex; justify-content: center">
+                                            Python
+                                        </div>
+                                        <div class="col-3" style="display: flex; justify-content: center">
+                                            Git
+                                        </div>
+                                        <div class="col-3" style="display: flex; justify-content: center">
+                                            Kubernetes
+                                        </div>
+                                        <div class="col-3" style="display: flex; justify-content: center">
+                                            Django
+                                        </div>
+                                    </div>
+                                    <div class="row" style="display: flex; align-items: center;">
+                                        <div class="col-3" style="display: flex; justify-content: center">
+                                            Flask
+                                        </div>
+                                        <div class="col-3" style="display: flex; justify-content: center">
+                                            FastAPI
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row" style="display: flex; align-items: center;">
+                            <div class="col-8">
+                                Angular
+                            </div>
+                            <div class="col-4" style="display: flex; justify-content: flex-end; align-items: center;">
+                                <button type="button" class="btn btn-danger" style="display: flex; justify-content: center;">
+                                    <i class="fa-solid fa-xmark fa-xl"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row" style="display: flex; align-items: center;">
+                            <div class="col-8">
+                                Spring
+                            </div>
+                            <div class="col-4" style="display: flex; justify-content: flex-end; align-items: center;">
+                                <button type="button" class="btn btn-danger" style="display: flex; justify-content: center;">
+                                    <i class="fa-solid fa-xmark fa-xl"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row" style="display: flex; align-items: center;">
+                            <div class="col-8">
+                                Docker
+                            </div>
+                            <div class="col-4" style="display: flex; justify-content: flex-end; align-items: center;">
+                                <button type="button" class="btn btn-danger" style="display: flex; justify-content: center;">
+                                    <i class="fa-solid fa-xmark fa-xl"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="col-4">
+            <div class="card mb-3">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item" style="display: flex; justify-content: space-between; align-items: center;">
+                        <h3 class="card-title" style="flex: 1;">Nouveau projet interne</h3>
+                    </li>
+                    <li class="list-group-item">
+                        <form action="" method="post" style="padding-left: 30px; padding-right: 30px;">
+                            {% csrf_token %}
+                            <div class="mb-3">
+                                <div class="form-group">
+                                    <label class="form-label">Client :</label>
+                                    <input class="form-control" type="text" name="client" placeholder="Ex : AXA GIE" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-floating">
+                                    <label class="form-label">Description du poste :</label>
+                                    <textarea maxlength="100" class="form-control validate" name="description" placeholder="100 caractères max"></textarea>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-group">
+                                    <label class="form-label">Compétence(s) :</label>
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <select class="form-select form-select-lg mb-2 form-control validate" aria-label=".form-select-lg example" name="tag" required>
+                                                <option value="">--Choisissez une compétence--</option>
+                                                <option value="Python">Python</option>
+                                                <option value="Angular">Angular</option>
+                                                <option value="Spring">Spring</option>
+                                                <option value="Docker">Docker</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-2">
+                                            <button type="button" class="btn-remove" style="">
+                                                <i class="fa-solid fa-xmark fa-lg"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <select class="form-select form-select-lg mb-2 form-control validate" aria-label=".form-select-lg example" name="tag" required>
+                                                <option value="">--Choisissez une compétence--</option>
+                                                <option value="Python">Python</option>
+                                                <option value="Angular">Angular</option>
+                                                <option value="Spring">Spring</option>
+                                                <option value="Docker">Docker</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-2">
+                                            <button type="button" class="btn-remove" style="">
+                                                <i class="fa-solid fa-xmark fa-lg"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <select class="form-select form-select-lg mb-2 form-control validate" aria-label=".form-select-lg example" name="tag" required>
+                                                <option value="">--Choisissez une compétence--</option>
+                                                <option value="Python">Python</option>
+                                                <option value="Angular">Angular</option>
+                                                <option value="Spring">Spring</option>
+                                                <option value="Docker">Docker</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-2">
+                                            <button type="button" class="btn-remove" style="">
+                                                <i class="fa-solid fa-xmark fa-lg"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <button type="button" class="btn btn-primary" style="width: 300px">
+                                                <i class="fa-solid fa-plus fa-lg"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column" style="text-align: center;">
+                                <input type="submit" class="btn btn-success" value="Valider" style="width: 200px;">
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+    
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

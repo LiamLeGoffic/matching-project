@@ -1,0 +1,16 @@
+.card {
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+}
+
+body {
+    background: #44c4e7;
+    font-weight: bolder;
+}
+
+.btn {
+    border-radius: 10px;
+}
+
