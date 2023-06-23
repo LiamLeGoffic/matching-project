@@ -39,9 +39,13 @@ def RM_home(request, id):
     return render(request, 'matching/RM_home.html', content)
 
 
-def gestion_skills(request):
-    return render(request, 'matching/gestion_skills.html')
+def RH_home(request):
+    return render(request, 'matching/RH_home.html')
 
 
-def gestion_missions(request):
-    return render(request, 'matching/gestion_missions.html')
+def consultant_profile(request):
+    return render(request, 'matching/consultant_profile.html')
+
+
+def consultant_research(request):
+    return render(request, 'matching/consultant_research.html')

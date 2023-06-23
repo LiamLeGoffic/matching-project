@@ -22,6 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.connexion, name='connexion'),
     path('RM/<int:id>/', views.RM_home, name='home-RM'),
-    path('gestion-competences/', views.gestion_skills, name='gestion-skills'),
-    path('gestion-missions/', views.gestion_missions, name='gestion-missions'),
+    path('RH/', views.RH_home, name='home-RH'),
+    path('recherche-de-consultants/', views.consultant_research, name='consultant-research'),
+    path('consultant/', views.consultant_profile, name='consultant-research'),
 ]
