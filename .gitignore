@@ -1,0 +1,5 @@
+# Ignore pycache
+matching/__pycache__/
+
+# Ignore compilated files
+*.pyc
